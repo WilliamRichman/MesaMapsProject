@@ -1,0 +1,1 @@
+https://css-tricks.com/simple-swipe-with-vanilla-javascript/

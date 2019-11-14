@@ -1,0 +1,154 @@
+/*CSS Variables*/
+:root{
+    --primary: lightgray;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+    --light: lavender;
+    --black: black;
+    --blue: blue;
+    --green: green;
+    --front: red;
+    --white: --white;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+
+body, html {
+    height: 100%;
+}
+
+.bg{
+    background-image: url(img/home.jpg);
+    height: 100%;
+    background-position: fit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.main-nav ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0px;
+    list-style: none;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.main-nav a {
+background: var(--light);
+display: block;
+text-decoration: none;
+padding: 0.8rem;
+text-align: center;
+color: var(--dark);
+text-transform: uppercase;
+font-size: 1.1rem;
+}
+
+.rout-nav {
+    display: grid;
+    grid-gap: 15px;
+    padding: 0px;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.rout-nav ul {
+display: grid;
+grid-gap: 15px;
+padding: 3px;
+list-style: none;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.rout-nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 9rem;
+}
+
+.Black {
+    background: var(--black);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--light);
+    text-transform: uppercase;
+    font-size: 9rem;
+}
+
+.Blue {
+    background: var(--blue);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 9rem; 
+}
+
+.Green{
+    background: var(--green);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 9rem; 
+}
+
+.showcase1 {
+    background-image: url(img/home.jpg);
+    background: center;
+}
+
+
+
+
+/* Media Queries */
+@media(max-width: 700px){
+    .top-container {
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b';
+    }
+}
+
+
+
+@media(max-width: 500px){
+    .top-container {
+        grid-template-areas: 
+        'showcase'
+        'top-box-a'
+        'top-box-b';
+    }
+}
+
+
+/*#loadbtn { background-color: var(--back);
+color: var(--front);
+text-align: center;
+border-block-color: var(--primary);
+border-radius: 75%;
+text-decoration: none;
+padding: 15px 32px;
+font-size: 42px;
+
+}
+*/

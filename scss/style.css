@@ -1,0 +1,15 @@
+/* This is a test for the swipe function in SCSS */
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+
+    img {
+        min-width: 100%; /* so it works in FireFox */
+        width: 100%; /* so it wirks in Chrome */
+        
+    }
+}
+
+
