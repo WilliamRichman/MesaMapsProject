@@ -41,7 +41,3 @@ grid-template-columns: repeat(3, 2fr);
     height: 450px;
     text-align: center;
 }
-
-#foot {
-    text-align: center;
-}
