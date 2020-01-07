@@ -29,6 +29,11 @@ body, html {
     background-size: fit;
 } */
 
+
+.container{
+    text-align: center;
+}
+
 .wrapper {
     display: grid;
     grid-gap: 10px;
